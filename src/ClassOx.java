@@ -10,11 +10,16 @@ public class ClassOx {
         SetTable();
     }
 
+    public int getCountX(){ return countX; }
+    public int getCountO(){ return countO; }
+    public int getCountDraw(){ return countDraw; }
+
     public int getround(){
         return countRound;
     }
 
     public void SetTable(){
+        countRound = 1;
         for (int i = 0;i<3;i++){
             for (int j = 0;j<3;j++){
                 table[i][j] = "-";
